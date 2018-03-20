@@ -70,10 +70,14 @@
 #header address {
     margin-bottom: 6px;
 }
-
+#header .glyphicon {
+    font-size: 30px;
+}
 #header .glyphicon-shopping-cart {
-    font-size: 24px;
     top: -2px;
+}
+#header .contact-links .row>div:nth-child(1) picture {
+	padding-right: 12px;
 }
 
 form :not(.btn-group)>.btn,
@@ -213,8 +217,10 @@ dl {
     margin-bottom: 24px;
 }
 
-#footer .contact-box .glyphicon {
-    font-size: 1.4em;
+#footer .contact-box .glyphicon:before {
+	display: block;
+	width: 20px;
+	height: 20px;
 }
 
 .glyphicon-cup-of-coffee:before,
