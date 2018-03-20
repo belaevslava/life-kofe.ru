@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <title></title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/global.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header id="header">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-2 col-sm-3 col-xs-4 text-left logo">
+            <a href="about.html"><img src="assets/images/logo.svg" alt="Логотип сайта"></a>
+          </div>
+          <div class="col-lg-8 col-md-7 col-sm-5 col-xs-8 contact-links">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <figure class="media">
+                  <picture class="media-left">
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                  </picture>
+                  <figcaption class="media-body text-left">
+                    <a href="https://yandex.ru/maps/-/CBQgQEuoPD" target="_blank"><address>Москва, ул. Профсоюзная, м. Беляево</address></a>
+                    <a href="contacts.html#driving-directions" class="text-orange">Схема проезда</a>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-4 hidden-md hidden-sm hidden-xs">
+                <a href="contacts.html#contact-form" class="btn btn-primary">Задать вопрос</a>
+              </div>
+              <div class="col-lg-4 col-md-6 text-left">
+                <i class="glyphicon glyphicon-earphone"></i> <a href="tel:+74955077317" class="h3">+7 (495) 507-7317</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 basket-btn-box">
+            <a href="basket.html" class="btn btn-info"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp;&nbsp;В корзине - 0 т.</a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+          <button type="button" class="navbar-toggle bg-primary-dark" data-toggle="collapse" data-target=".navbar-main-menu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand visible-xs text-white" href="#">Навигация по сайту</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-main-menu">
+          <nav id="navbar">
+            <div class="container">
+              <ul class="nav nav-justified">
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="repairs.html">Ремонт кофемашин</a></li>
+                <li class="active"><a href="repair_parts.html">Запчасти для кофемашин</a></li>
+                <li><a href="rent_of_coffee_machines.html">Аренда кофемашин</a></li>
+                <li><a href="payment_and_delivery.html">Оплата и Доставка</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+    </header>
+    <main id="main">
+      <link rel="stylesheet" href="assets/css/pages/repair_parts.css">
+      <header id="page-header">
+        <h1 class="container">Запчасти для кофемашин</h1>
+      </header>
+      <!-- Filters -->
+      <section id="filter" class="filter bg-warning">
+        <div class="container">
+          <form action="" method="POST" role="form" class="row">
+            <div class="col-sm-3 hidden-sm">
+              <label class="form-name">Быстрый поиск запчастей</label>
+            </div>
+            <div class="col-md-6 col-sm-8">
+              <ul class="row list-unstyled">
+                <li class="col-sm-3">
+                  <select name="manufacturer" id="manufacturer" class="form-control input" required="required">
+                    <option value="">Производитель</option>
+                  </select>
+                </li>
+                <li class="col-sm-3">
+                  <select name="model" id="model" class="form-control" required="required">
+                    <option value="">Модель</option>
+                  </select>
+                </li>
+                <li class="col-sm-4">
+                  <select name="productGroup" id="productGroup" class="form-control" required="required">
+                    <option value="">Группа товаров</option>
+                  </select>
+                </li>
+                <li class="col-sm-2">
+                  <button type="submit" class="btn btn-primary btn-block">Найти</button>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-4 filter-serach-box">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control filter-search" placeholder="Поиск запчасти по номеру">
+                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                <span id="inputSuccess5Status" class="sr-only">(success)</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- /Filters -->
+      <section id="search-for-spare-parts-by-manufacturer" class="has-padding">
+        <div class="container text-center">
+          <h2>Искать запчасти по производителю</h2>
+          <ul class="row list-unstyled list-of-brands">
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/saeco.svg" alt="saeco"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/jura.svg" alt="jura"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/spidem.svg" alt="spidem"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/gaggia.svg" alt="gaggia"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/siemens.svg" alt="siemens"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/bosch.svg" alt="bosch"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/electrolux.svg" alt="electrolux"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/aeg.svg" alt="aeg"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/melitta.svg" alt="melitta"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/delonghi.svg" alt="delonghi"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/nivona.svg" alt="nivona"></a>
+            </li>
+            <li class="col-lg-2 col-md-3 col-sm-4">
+              <a href="" class="thumbnail"><img src="assets/images/brands/rotel.svg" alt="rotel"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="search-for-spare-parts-for-type" class="has-padding">
+        <div class="container">
+          <h2>Искать запчасти типу</h2>
+          <nav>
+            <ul class="row">
+              <li class="col-md-4 col-sm-6"><a href="">Бункеры, контейнеры для воды</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Колбы для кофеварок</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Поддоны, контейнеры, решетки </a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Крышки, люки, защиты</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Клапаны</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Переходники, соеденители</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Кофемолки и запчасти</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Краны и штуцеры</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Помпы, насосы для кофемашин</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Капучинаторы, молочные системы</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Электроника</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Счетчики, датчики, микровыключатели</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Заварные устройства и запчасти</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Трубки, шланги, скобы, зажимы</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Ручки, переключатели, кнопки</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Термоблоки, бойлеры, узлы подачи</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Уплотнители, кольца, прокладки, манжеты</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Редукторы, моторы, приводы, шестерни</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Рожки, фильтры, сита кофеварок</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Носики подачи кофе, диспенсоры</a></li>
+              <li class="col-md-4 col-sm-6"><a href="">Разное</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section id="buy-spare-parts-from-a-warehouse-in-moscow" class="has-padding">
+        <div class="container">
+          <h2 class="text-uppercase text-center">Купить запчасти со склада в Москве</h2>
+          <p>Одно из преимуществ работы с нашей компанией - это возможность купить запчасти с разборок. Данный вариант продажи запчастей применяется, когда клиенту необходима какая-то незначительная запчасть, а производитель поставляет только полный комплект дорогостоящего блока. Отличительной чертой данной услуги является более низкая цена с различным видом скидок.</p>
+          <p>В случае, если необходимой детали нет на разборках, нет на складе и отсутствует возможность заказать, наши специалисты сделают все возможное, чтобы осуществить ремонт испорченной детали кофемашины.</p>
+        </div>
+      </section>
+      <section id="buying-from-us-spare-parts-you-get" class="bg-info has-padding">
+        <div class="container">
+          <h2>Покупая у нас запчасти вы получаете:</h2>
+          <p>&nbsp;</p>
+          <ul class="row list-unstyled list-of-sevices">
+            <li class="col-sm-3">
+              <figure>
+                <picture class="img-circle img-thumbnail">
+                  <img src="assets/images/pages/repair_parts/original.svg" alt="Оригинальные запчасти">
+                </picture>
+                <figcaption class="h5">Все запчасти оригинальные
+                  <br>от производителей</figcaption>
+              </figure>
+            </li>
+            <li class="col-sm-3">
+              <figure>
+                <picture class="img-circle img-thumbnail">
+                  <img src="assets/images/pages/repair_parts/guarantee.svg" alt="Гарантия">
+                </picture>
+                <figcaption class="h5">При установке у нас,
+                  <br>гарантия 2 года</figcaption>
+              </figure>
+            </li>
+            <li class="col-sm-3">
+              <figure>
+                <picture class="img-circle img-thumbnail">
+                  <img src="assets/images/pages/repair_parts/thinck.svg" alt="Огромный выбор запчастей">
+                </picture>
+                <figcaption class="h5">Огромный выбор
+                  <br>запчастей
+                </figcaption>
+              </figure>
+            </li>
+            <li class="col-sm-3">
+              <figure>
+                <picture class="img-circle img-thumbnail">
+                  <img src="assets/images/pages/repair_parts/around.svg" alt="Возможность покупки б/у запчастей">
+                </picture>
+                <figcaption class="h5">Возможность покупки
+                  <br>б/у запчастей</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contact-form" class="has-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 hidden-xs">
+              <img src="assets/images/pages/repair_parts/coffee-machine.jpg" alt="Кофемашина" class="img-responsive">
+            </div>
+            <div class="col-sm-7">
+              <form action="" method="POST" role="form">
+                <h2 class="text-left">Не нашли нужную запчасть?</h2>
+                <p>У нас большая база поставщиков запчастей, и в случае если нет запчастей в нашем каталоге мы сможем помочь вам найти необходимые вам запчасти.</p>
+                <ul class="list-unstyled row">
+                  <li class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="sparePartName" id="sparePartName" class="form-control" value="" required="required" pattern="" placeholder="Название запчасти">
+                    </div>
+                  </li>
+                  <li class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="brand" id="brand" class="form-control" value="" required="required" placeholder="Марка кофемашины">
+                    </div>
+                  </li>
+                  <li class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="customerName" id="customerName" class="form-control" value="" required="required" pattern="" placeholder="Ваше имя">
+                    </div>
+                  </li>
+                  <li class="col-sm-6">
+                    <div class="form-group">
+                      <input type="tel" name="customerPhone" id="customerPhone" class="form-control" value="" required="required" placeholder="Ваш телефон">
+                    </div>
+                  </li>
+                  <li class="col-sm-12">
+                    <div class="form-group">
+                      <input type="file" name="files[]" id="js-upload-files" multiple>
+                    </div>
+                  </li>
+                  <li class="col-xs-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="customerComment" id="customerComment" placeholder="Комментарий (не обязательно)"></textarea>
+                    </div>
+                  </li>
+                </ul>
+                <button type="submit" class="btn btn-info">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="bg-primary-dark">
+      <div class="container">
+        <ul class="list-unstyled row">
+          <li class="col-md-3 col-sm-4">
+            <h5>Контакты</h5>
+            <ul class="list-unstyled contact-box">
+              <li>
+                <figure class="media">
+                  <div class="pull-left"><i class="glyphicon glyphicon-phone-alt"></i></div>
+                  <figcaption class="media-body">
+                    <ul class="list-unstyled">
+                      <li><a href="">+7 (495) 507-7317</a>,</li>
+                      <li><a href="">+7 (499) 713-7803</a></li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="media">
+                  <div class="pull-left"><i class="glyphicon glyphicon-envelope"></i></div>
+                  <figcaption class="media-body"><a href="email:info@life-kofe.ru">info@life-kofe.ru</a>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="media">
+                  <div class="pull-left"><i class="glyphicon glyphicon-map"></i></div>
+                  <figcaption class="media-body">
+                    <a href="">
+                      <address>117279, Москва, ул. Профсоюзная д. 93</address>
+                    </a>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </li>
+          <li class="col-md-3 col-sm-4">
+            <h5>Меню</h5>
+            <nav>
+              <ul class="list-unstyled">
+                <li><a href="about.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="repairs.html">Ремонт кофемашин</a></li>
+                <li><a href="repair_parts.html">Запчасти для кофемашин</a></li>
+                <li><a href="products_category.html">Каталог товаров</a></li>
+                <li><a href="#">Инструкции</a></li>
+                <li><a href="#">Полезные статьи</a></li>
+                <li><a href="#">О кофемашинах</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li class="col-md-3 col-sm-4">
+            <h5>&nbsp;<span class="visible-xs">Полезные ссылки</span></h5>
+            <nav>
+              <ul class="list-unstyled">
+                <li><a href="rent_of_coffee_machines.html">Аренда кофемашин</a></li>
+                <li><a href="payment_and_delivery.html">Оплата</a></li>
+                <li><a href="payment_and_delivery.html">Доставка</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="">Гарантии</a></li>
+                <li><a href="">Служба сервиса</a></li>
+                <li><a href="">Вакансии</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li class="col-md-3 hidden-sm hidden-xs logo-box"><img src="assets/images/logo-footer.svg" alt="Логотип сайта">
+            <p>Life-Kofe. 1997-2017 г.</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

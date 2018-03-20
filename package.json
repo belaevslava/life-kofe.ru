@@ -1,0 +1,29 @@
+{
+  "name": "life-kofe.ru",
+  "version": "1.0.0",
+  "description": "Online shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://belaevslava@bitbucket.org/belaevslava/life-kofe.ru.git"
+  },
+  "keywords": [
+    "coffee"
+  ],
+  "author": "Belaev Slava",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/belaevslava/life-kofe.ru#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cssbeautifier": "^0.1.2",
+    "grunt-prettify": "^0.4.0",
+    "grunt-tinyimg": "^1.0.0"
+  }
+}

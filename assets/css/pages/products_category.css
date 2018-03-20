@@ -1,0 +1,8 @@
+@import url(../components/filter.css);
+
+#page-header {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(59, 33, 20, .6)), to(rgba(59, 33, 20, .6))),
+		url(../../images/pages/products_category/page_header.jpg);
+    background-image: linear-gradient(to right, rgba(59, 33, 20, .6), rgba(59, 33, 20, .6)),
+		url(../../images/pages/products_category/page_header.jpg);
+}
