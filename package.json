@@ -1,7 +1,64 @@
 {
   "name": "life-kofe.ru",
   "version": "1.0.0",
-  "description": "Online shop",
+  "description": "Frontend for «Life Kofe» Shop",
+  "homepage": "https://belaevslava.github.io/life-kofe.ru/index.html",
+  "previews": {
+    "directory": "previews",
+    "images": [{
+        "path": "index.png",
+        "title": "About"
+      },
+      {
+        "path": "repairs.png",
+        "title": "Repairs"
+      },
+      {
+        "path": "repair_parts.png",
+        "title": "Repair Parts"
+      },
+      {
+        "path": "rent_of_coffee_machines.png",
+        "title": "Rent of Coffee Machines"
+      },
+      {
+        "path": "contacts.png",
+        "title": "Contacts"
+      },
+      {
+        "path": "rental_of_coffee_machines_in_the_office.png",
+        "title": "Rental of Coffee Machines in the Office"
+      },
+      {
+        "path": "rent_a_coffee_machine_when_it_broke.png",
+        "title": "Rent a Coffee Machine When It Broke"
+      },
+      {
+        "path": "rent_a_coffee_machine_for_an_exhibition.png",
+        "title": "Rent a Coffee Machine for an Exhibition"
+      },
+      {
+        "path": "products_category.png",
+        "title": "Products Category"
+      },
+      {
+        "path": "product.png",
+        "title": "Product"
+      },
+      {
+        "path": "payment_and_delivery.png",
+        "title": "Payment and Delivery"
+      },
+      {
+        "path": "list_of_products.png",
+        "title": "List of Products"
+      },
+      {
+        "path": "searching_results.png",
+        "title": "Searching Results"
+      }
+    ]
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
